@@ -7,7 +7,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href = "gonderiler.css" type = "text/css" rel = "stylesheet"/>
+<link href = "iletisim-formlari.css" type = "text/css" rel = "stylesheet"/>
 <link href = "darkblog.css" type = "text/css" rel = "stylesheet"/>
 <script src="https://kit.fontawesome.com/e7d40e7ebc.js" crossorigin="anonymous"></script>
 
@@ -86,7 +86,7 @@
 
 
 <div id="ozellik">
-		<a href="gonderiler.php"><button class="ozellikbuton"><i class="fas fa-newspaper" style="font-size:25px;"></i> Gönderiler</button></a>
+		<a href="index.php"><button class="ozellikbuton"><i class="fas fa-newspaper" style="font-size:25px;"></i> Gönderiler</button></a>
 		<a href="iletisim-formlari.php"><button class="ozellikbuton"><i class="fas fa-inbox" style="font-size:25px;"></i> İletişim Formları</button></a>
 		<a href="yazarlar.php"><button class="ozellikbuton"><i class="fas fa-users" style="font-size:25px;"></i> Yazarlar</button></a>
 		<a href="blog-olustur.php"><button class="ozellikbuton"><i class="fas fa-pen" style="font-size:25px;"></i> Gönderi Oluştur</button></a>
@@ -161,28 +161,38 @@ function bold(event) {
 </script>
 
 
+
+
 <div id="komple">
 
+
 <div id="goruntuleust">
-<div id="baslikk">
-<center>BAŞLIK</center>
+
+<div id="ad">
+<center>AD</center>
 </div>
 
-<div id="tarih">
-<center>TARİH</center>
+<div id="soyad">
+<center>SOYAD</center>
 </div>
 
-<div id="gor">
-<center>GÖRÜNTÜLE</center>
+<div id="eposta">
+<center>E-POSTA</center>
+</div>
+
+<div id="mesaj">
+<center>İLETİ</center>
 </div>
 
 </div>
+
+
 
 <?php
 		
 			include("ayar.php");
 			
-			$veri = $vt->prepare("select * from yazilimblog order by id desc");
+			$veri = $vt->prepare("select * from iletisim order by id desc");
 			$veri->execute();
 			
 			while($row = $veri->fetch(PDO::FETCH_ASSOC)) {
@@ -198,20 +208,22 @@ function bold(event) {
 				";*/
 					echo "
 					
-					<div class='blogbaslik'>
-					".$row["baslik"]."
-					
-					<div class='bloggor'>
-					<a href='https://rapicaus.com/projelerim/BlogTasarimim/Blog/blog.php?p=".$row["id"]."'>GÖRÜNTÜLE</a>
+					<div class='ad'>
+					<center>".$row["ad"]."</center>
 					</div>
 					
-					<div class='blogtarih'>
-					".$row["date"]."
+					<div class='soyad'>
+					<center>".$row["soyad"]."</center>
 					</div>
 					
-					
+					<div class='eposta'>
+					<center><a href='mailto:".$row["eposta"]."'>".$row["eposta"]."</a></center>
 					</div>
-		
+					
+					<div class='mesaj'>
+					<a href='mesaj.php?p=".$row["id"]."'><center>OKU</center></a>
+					</div>
+				
 	
 				";
 				

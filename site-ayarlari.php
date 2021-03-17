@@ -1,5 +1,26 @@
+<?php
+	include("ayar.php");
+	
+	if($_POST){
+		$footer = $_POST["footer"];
+		
+		$veri = $vt->prepare("insert into ayarlar set footer=?");
+		$veri->execute(array($footer));
+		
+		if($veri) {
+			echo "<font size='5' color='green'>Başarıyla Gönderildi.</font><br>";
+			header("refresh: 2; url=index.php");
+		}else {
+			echo "<font size='5' color='Red'>Mesaj Gönderilemedi.</font><br>";
+		}
+	}
+?>
 
-<html>
+
+
+
+
+<html lang="tr">
 <head>
 <title>Ahmet</title>
 
@@ -7,7 +28,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link href = "gonderiler.css" type = "text/css" rel = "stylesheet"/>
+<link href = "blog-olustur.css" type = "text/css" rel = "stylesheet"/>
 <link href = "darkblog.css" type = "text/css" rel = "stylesheet"/>
 <script src="https://kit.fontawesome.com/e7d40e7ebc.js" crossorigin="anonymous"></script>
 
@@ -86,7 +107,7 @@
 
 
 <div id="ozellik">
-		<a href="gonderiler.php"><button class="ozellikbuton"><i class="fas fa-newspaper" style="font-size:25px;"></i> Gönderiler</button></a>
+		<a href="index.php"><button class="ozellikbuton"><i class="fas fa-newspaper" style="font-size:25px;"></i> Gönderiler</button></a>
 		<a href="iletisim-formlari.php"><button class="ozellikbuton"><i class="fas fa-inbox" style="font-size:25px;"></i> İletişim Formları</button></a>
 		<a href="yazarlar.php"><button class="ozellikbuton"><i class="fas fa-users" style="font-size:25px;"></i> Yazarlar</button></a>
 		<a href="blog-olustur.php"><button class="ozellikbuton"><i class="fas fa-pen" style="font-size:25px;"></i> Gönderi Oluştur</button></a>
@@ -158,67 +179,75 @@ function bold(event) {
 }
 
 
+document.querySelector("#today").valueAsDate = new Date();
+
+
+
+
 </script>
 
 
 <div id="komple">
 
-<div id="goruntuleust">
-<div id="baslikk">
-<center>BAŞLIK</center>
-</div>
 
-<div id="tarih">
-<center>TARİH</center>
-</div>
-
-<div id="gor">
-<center>GÖRÜNTÜLE</center>
-</div>
-
-</div>
-
-<?php
-		
-			include("ayar.php");
-			
-			$veri = $vt->prepare("select * from yazilimblog order by id desc");
-			$veri->execute();
-			
-			while($row = $veri->fetch(PDO::FETCH_ASSOC)) {
-				/*echo "<table border='1'>
-					<tr>
-						<td><a href='s.php?p=".$row["id"]."'><strong>".$row["baslik"]."</strong></a></td>
-					</tr>
-					
-					<tr>
-						<td>".$row["metin"]."</td>
-					</tr>
-				
-				";*/
-					echo "
-					
-					<div class='blogbaslik'>
-					".$row["baslik"]."
-					
-					<div class='bloggor'>
-					<a href='https://rapicaus.com/projelerim/BlogTasarimim/Blog/blog.php?p=".$row["id"]."'>GÖRÜNTÜLE</a>
-					</div>
-					
-					<div class='blogtarih'>
-					".$row["date"]."
-					</div>
-					
-					
-					</div>
-		
 	
-				";
-				
-				
-				
-			}
-		?>
+	
+	
+<div id="sag">
+	
+	<div id="post">	
+	
+	
+	<div id="metinozellik">
+			METİN DÜZENLEME KODLARI
+			</div>
+	<textarea id="kodlar" oninput="auto_grow(this)" disabled style="color: #ff0000">
+<text style="renk"> Kelime </text> = Kelimenin rengini değiştirir.
+<strong> Kelime </strong> = Kelimeyi kalın yazar.
+<a href="link"> Kelime </a> = Kelimeye link verir.
+<i> Kelime </i> = Kelimeyi eğik yazar.	
+	</textarea>
+	
+		<form action="" method="POST">
+		
+			<div id="metinozellik">
+			<i id="duzen" class="fas fa-undo" onclick="document.execCommand('undo',false,null);" style="font-size: 25px;"></i>
+			<i id="duzen" class="fas fa-redo" onclick="document.execCommand('redo',false,null);" style="font-size: 25px;"></i>
+			FOOTER
+			</div>
+			
+		<textarea id="baslik" name="footer" oninput="auto_grow(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+			
+			<div id="metinozellik">
+			<i id="duzen" class="fas fa-undo" onclick="document.execCommand('undo',false,null);" style="font-size: 25px;"></i>
+			<i id="duzen" class="fas fa-redo" onclick="document.execCommand('redo',false,null);" style="font-size: 25px;"></i>
+			DEVAMI METNİ
+			</div>
+			
+		<textarea id="baslik" name="devami" oninput="auto_grow(this)" >Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+	
+	
+		<div id="metinozellik">
+			<i id="duzen" class="fas fa-undo" onclick="document.execCommand('undo',false,null);" style="font-size: 25px;"></i>
+			<i id="duzen" class="fas fa-redo" onclick="document.execCommand('redo',false,null);" style="font-size: 25px;"></i>
+			BLOG METNİ
+			</div>
+			
+		<textarea id="text" name="metin" oninput="auto_grow(this)" >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sapien erat, pulvinar at tempor sed, pulvinar eu sem. Integer imperdiet imperdiet neque eget tempus. Nam purus ex, volutpat id felis non, tempus ultrices massa. Pellentesque vestibulum sodales libero nec dignissim. Cras felis diam, malesuada at ligula et, consectetur euismod turpis.</textarea>
+	
+		<div class="img">
+			<img id="frame" style="width:100%; height:100%;"/>
+		</div>
+	
+	<center><input style="display:block;" id="foto" class="form-control gorselekle" name="foto" type="file" onchange="preview()"/></center>
+			<center><input id="today" type="date" name="date"></center>
+	<center><input type="submit" value="Gönderiyi Paylaş" id="gonderipaylas"/></center>
+		</form>
+	</div>
+	
+</div>
+		
+	</div>
 
 </body>
 

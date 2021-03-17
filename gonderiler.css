@@ -1,0 +1,567 @@
+#ust {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff0000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: block;
+}
+
+#ustm {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #ff0000;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: none;
+}
+
+
+.metin {
+	font-family: Consolas,"courier new";
+	width: 90%;
+	position: relative;
+	margin: auto;
+	border-style: solid;
+	border-color: purple;
+	margin-top: 3%;
+	background-color: Transparent;
+	display: block;
+	border: 3px solid purple;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+
+#gonderiler {
+	width: 68%;
+	background-color: Transparent;
+	float: left;
+	margin-left: 3%;
+	margin-top: 2%;
+	flex: 70%;
+	border-right-style: solid;
+	border-right-color: #ff0000;
+	border-width: 5px;
+}
+
+#ozellik {
+	width: 20%; 
+	height: 100%;
+	background-color: #23edf7;
+	float: left;
+	border-right-style: solid;
+	border-right-color: black;
+	position: fixed;
+}
+
+.ozellikbuton {
+	width: 100%;
+	height: 10%;
+	background-color: Transparent;
+	color: black;
+	border: none;
+	transition-duration: 0.5s;
+	float: left;
+	text-align: left;
+	
+}
+
+.ozellikbuton:hover {
+	width: 100%;
+	height: 10%;
+	background-color: white;
+	color: black;
+	border: none;
+	transition-duration: 0.3s;
+	float: left;
+}
+
+
+
+
+
+
+.gorselekle {
+	height: 8%;
+	background-color: black;
+	color: white;
+	border: none;
+	transition-duration: 0.5s;
+	font-size: 120%;
+	position: relative;
+	float: left;
+	outline: none;
+}
+
+select {
+	outline: none;
+	color: white;
+	background-color: black;
+	float: right;
+}
+
+
+
+.post {
+	width: 100%;
+	background-color: Transparent;
+	position: relative;
+	margin: auto;
+}
+
+#goruntuleust {
+	width: 100%;
+	height: 5%;
+	background-color: #00ffbf;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	
+	border-top-style: solid;
+	border-top-color: black;
+}
+
+#baslikk {
+	width: 65%;
+	height: 100%;
+	float: left;
+	border-right-style: solid;
+	border-right-color: black;
+	
+}
+
+#tarih {
+	width: 22%;
+	height: 100%;
+	float: left;
+	border-right-style: solid;
+	border-right-color: black;
+}
+
+
+#gor {
+	width: 13%;
+	height: 100%;
+	float: left;
+}
+
+
+
+
+
+
+.blogbaslik {
+	width: 100%;
+	float: left;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	text-align: left;
+}
+
+.blogtarih {
+	width: 22.22%;
+	float: right;
+	border-right-style: solid;
+	border-right-color: black;
+	border-left-style: solid;
+	border-left-color: black;
+	text-align: center;
+	
+}
+
+
+.bloggor {
+	width: 13%;
+	float: right;
+	text-align: center;
+	border-right-style: solid;
+	border-right-color: black;
+}
+
+
+
+
+
+.code {
+	width: 90%;
+	position: relative;
+	margin: auto;
+	border-style: solid;
+	border-color: purple;
+	margin-top: 3%;
+	background-color: Transparent;
+	display: block;
+	border: 3px solid purple;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+
+.img {
+	width: 70%;
+	height: 40%;
+	background-color: gray;
+	position: relative;
+	margin: auto;
+}
+
+
+.cikti {
+	width: 90%;
+	background-color: white;
+	position: relative;
+	margin: auto;
+	position: relative;
+	margin: auto;
+	text-align: left;
+	border-style: solid;
+	border-color: purple;
+	margin-top: 3%;
+	background-color: Transparent;
+	display: block;
+	border: 3px solid purple;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+
+
+#text {
+	width: 90%;
+	background-color: white;
+	position: relative;
+	margin: auto;
+	position: relative;
+	margin: auto;
+	text-align: left;
+	background-color: Transparent;
+	display: block;
+	resize: none;
+	min-height: 150px;
+	overflow: hidden;
+	outline: none;
+	height: auto;
+}
+
+#baslik {
+	width: 90%;
+	background-color: white;
+	position: relative;
+	margin: auto;
+	position: relative;
+	margin: auto;
+	text-align: left;
+	background-color: Transparent;
+	display: block;
+	resize: none;
+	min-height: 50px;
+	overflow: hidden;
+	outline: none;
+	height: auto;
+	margin-bottom: 2%;
+}
+
+#devami {
+	width: 90%;
+	background-color: white;
+	position: relative;
+	margin: auto;
+	position: relative;
+	margin: auto;
+	text-align: left;
+	background-color: Transparent;
+	display: block;
+	resize: none;
+	min-height: 50px;
+	overflow: hidden;
+	outline: none;
+	height: auto;
+	margin-bottom: 2%;
+}
+
+
+
+#metinozellik {
+	position: relative;
+	margin: auto;
+	width: 90%;
+	background-color: #00ffc8;
+	margin-top: 2%;
+}
+
+#edit {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	transition-duration: 0.5s;
+}
+
+#finish {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	display:none;
+	transition-duration: 0.5s;
+}
+
+#edit:hover {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+}
+
+#finish:hover {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	display:none;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+}
+
+
+
+
+
+#editt {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	transition-duration: 0.5s;
+}
+
+#finishh {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	display:none;
+	transition-duration: 0.5s;
+}
+
+#editt:hover {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+}
+
+#finishh:hover {
+	color: black;
+	margin-right: 1%;
+	float: right;
+	display:none;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+}
+
+
+
+
+
+#duzen {
+	color: black;
+	margin-right: 1%;
+	transition-duration: 0.5s;
+}
+
+#duzen:hover {
+	color: black;
+	margin-right: 1%;
+	-ms-transform: rotate(20deg); /* IE 9 */
+	transform: rotate(360deg);
+	transition-duration: 0.5s;
+}
+
+
+.colorpicker {
+    border: solid thin black;
+    width: 20px;
+    height: 20px;
+}
+
+
+#komple {
+	width: 80%;
+	background-color: Transparent;
+	float: right;
+	flex: 70%;
+}
+
+
+#sag {
+	width: 100%;
+	background-color: Transparent;
+	float: right;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	flex: 70%;
+	border-style: solid;
+	border-color: black;
+}
+
+
+#blog {
+	width: 72%;
+	background-color: Transparent;
+	flex: 70%;
+	border-style: solid;
+	border-color: black;
+	position: relative;
+	margin: auto;
+}
+
+#metinalani {
+	width: 80%;
+	background-color: gray;
+	position: relative;
+	margin:auto;
+}
+
+
+.buton {
+	width: 13%;
+	height: 7%;
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: right;
+}
+
+.frame {
+	width: 200px;
+	height: 200px;
+	border: solid;
+}
+
+
+.secili {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: left;
+}
+
+.buton:hover {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	float: right;
+	
+}
+
+
+
+.butonm {
+	width: 100%;
+	height: 15%;
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.secilim {
+	width: 100%;
+	height: 15%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.butonm:hover {
+	width: 100%;
+	height: 17%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	
+}
+
+
+
+.icon {
+	float: right;
+	margin-right: 3%;
+	color: black;
+	border: none;
+	background-color: Transparent;
+	
+}
+
+.menuu {
+	width: 100%;
+	background-color: #ff0000;
+	color: white;
+	display: none;
+}
+
+
+.image {
+	width: 70%;
+	height: 25%;
+	background-color: gray;
+	position: relative;
+	margin: auto;
+}
+
+.gonderi {
+	width: 100%;
+	background-color: Transparent;
+	float: left;
+	flex: 70%;
+	margin-top: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: #ff0000;
+	border-width: 5px;
+}
+
+.aciklama {
+	width: 96%;
+	background-color: Transparent;
+	margin-left: 2%;
+	float: left;
+}
+
+.devaminioku {
+	margin-left: 1%;
+}
+
+.devaminioku:hover {
+	margin-left: 1%;
+}
