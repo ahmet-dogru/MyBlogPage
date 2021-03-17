@@ -1,0 +1,382 @@
+#ust {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #038eff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: block;
+}
+
+::selection {
+  color: white;
+  background: gray;
+}
+
+a {
+	text-decoration: none;
+}
+
+
+#ustm {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #038eff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: none;
+}
+
+#gust {
+	width: 100%;
+	height: 8%;
+	background-color: black;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+#sol {
+	width: 72%;
+	background-color: Transparent;
+	float: left;
+	margin-top: 5%;
+	flex: 70%;
+	border-right-style: solid;
+	border-right-color: #038eff;
+}
+
+#sagust {
+	width: 25%;
+	background-color: #038eff;
+	margin: auto;
+	float: right;
+	margin-top: 5%;
+	margin-right: 1%;
+	flex: 30%;
+}
+
+
+#sag {
+	width: 25%;
+	background-color: Transparent;
+	margin: auto;
+	float: right;
+	margin-right: 1%;
+	flex: 30%;
+	
+}
+
+
+.saggonderi {
+	width: 96%;
+	background-color: Transparent;
+	position: relative;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: #038eff;
+	
+}
+
+
+#sag1 {
+	width: 25%;
+	height: 53.7%;
+	background-color: purple;
+	margin: auto;
+	float: right;
+	margin-top: 5%;
+	margin-right: 1.5%;
+	flex: 30%;
+}
+
+
+#mesaj {
+	width: 15%;
+	height: 15%;
+	background-color: white;
+	margin: auto;
+	float: right;
+	flex: 30%;
+	z-index: 2;
+	position: relative;
+	position: absolute;
+	left: 1040px;
+	display: none;
+	border-style: solid;
+	border-color: black;
+	position: fixed;
+}
+
+#mesajici {
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+	flex: 30%;
+	z-index: 3;
+	
+}
+
+
+
+.buton {
+	width: 13%;
+	height: 7%;
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: left;
+}
+
+.buton:hover {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	float: left;
+	
+}
+
+
+
+.butonm {
+	width: 100%;
+	height: 500%;
+	background-color: #038eff;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.secilim {
+	width: 100%;
+	height: 15%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.butonm:hover {
+	width: 100%;
+	height: 500%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	
+}
+
+
+
+
+#post {
+	width: 95%;
+	background-color: Transparent;
+	position: relative;
+	margin: auto;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
+	
+}
+
+.icon {
+	float: right;
+	margin-right: 3%;
+	color: black;
+	border: none;
+	background-color: Transparent;
+	
+}
+
+.menuu {
+	width: 100%;
+	height: 3%;
+	background-color: #038eff;
+	color: white;
+	display: none;
+	position: relative;
+	position: fixed;
+	margin-top: -13%;
+	z-index: 2;
+}
+
+#gg {
+	float: right;
+	margin-right: 1%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: block;
+	margin-top: 1%;
+}
+
+
+
+#bildirim {
+	height: 7%;
+	float: right;
+	margin-right: 0.5%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: block;
+}
+
+#bildirimk {
+	height: 7%;
+	float: right;
+	margin-right: 0.5%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: none;
+}
+
+
+#ggm {
+	float: right;
+	background-color: Transparent;
+	display: block;
+	float: left;
+	color: white;
+	border: none;
+}
+
+
+
+.baslik {
+	margin-top: 3%;
+}
+
+
+
+#bildirimm {
+	float: right;
+	background-color: Transparent;
+	display: block;
+	float: left;
+	color: white;
+	border: none;
+	margin-right: 2%;
+	
+}
+
+#bildirimmk {
+	float: right;
+	background-color: Transparent;
+	display: none;
+	float: left;
+	color: white;
+	border: none;
+	margin-right: 2%;
+}
+
+
+
+
+
+.image {
+	width: 70%;
+	height: 40%;
+	background-color: gray;
+	position: relative;
+	margin: auto;
+}
+
+#code {
+	width: 90%;
+	position: relative;
+	margin: auto;
+	border-style: solid;
+	border-color: purple;
+	margin-top: 3%;
+	background-color: Transparent;
+	display: block;
+	border: 3px solid purple;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+
+
+
+code {
+  font-family: Consolas,"courier new";
+}
+
+
+#sag11 {
+	width: 100%;
+	background-color: #038eff;
+	float: left;
+	margin-top: 5%;
+}
+
+
+#metin {
+	font-family: Arial, Helvetica, sans-serif;
+	width: 90%;
+	position: relative;
+	margin: auto;
+	border-style: solid;
+	border-color: #038eff;
+	margin-top: 3%;
+	background-color: Transparent;
+	display: block;
+	border: 3px solid #038eff;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+p {
+  margin-left: 5%;
+}
+
+#cikti {
+	width: 90%;
+	background-color: white;
+	position: relative;
+	margin: auto;
+	position: relative;
+	margin: auto;
+	text-align: left;
+	border-style: solid;
+	border-color: purple;
+	margin-top: 3%;
+	background-color: Transparent;
+	display: block;
+	border: 3px solid purple;
+	padding: 20px;
+	border-radius: 50px;
+}
+
+h1 {
+	width: 90%;
+	position: relative;
+	margin: auto;
+	margin-top: 2%;
+}

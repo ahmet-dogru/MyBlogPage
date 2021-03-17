@@ -1,0 +1,39 @@
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+
+#dark-gg {
+	float: right;
+	margin-right: 1%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: none;
+	margin-top: 1%;
+}
+
+#dark-cikti {
+	width: 90%;
+	height: 15%;
+	position: relative;
+	margin: auto;
+	color: #1cfc03;
+	position: relative;
+	margin: auto;
+	text-align: left;
+	border-style: solid;
+	border-color: purple;
+	background-color: gray;
+	margin-top: 3%;
+	display: none;
+}
+
+#dark-ggm {
+	float: right;
+	background-color: Transparent;
+	display: none;
+	float: left;
+	color: white;
+	border: none;
+}

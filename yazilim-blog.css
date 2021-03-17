@@ -1,0 +1,355 @@
+#ust {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #038eff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: block;
+}
+
+
+::selection {
+  color: white;
+  background: gray;
+}
+
+
+
+#ustm {
+	width:100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #038eff;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: none;
+	position: fixed;
+}
+
+
+
+#gonderiler {
+	width: 68%;
+	background-color: Transparent;
+	float: left;
+	margin-left: 3%;
+	margin-top: 2%;
+	flex: 70%;
+	border-right-style: solid;
+	border-right-color: #038eff;
+	border-width: 5px;
+}
+
+
+
+a {
+	text-decoration: none;
+}
+
+
+.date {
+	float: right;
+}
+
+
+#sagust {
+	width: 25%;
+	background-color: #038eff;
+	margin: auto;
+	float: right;
+	margin-top: 5%;
+	margin-right: 1%;
+	flex: 30%;
+	display: block;
+}
+
+
+#sag {
+	width: 25%;
+	background-color: Transparent;
+	margin: auto;
+	float: right;
+	margin-right: 1%;
+	flex: 30%;
+	display: block;
+}
+
+#sag1 {
+	width: 25%;
+	height: 40%;
+	background-color: purple;
+	margin: auto;
+	float: right;
+	margin-top: 5%;
+	margin-right: 1%;
+	flex: 30%;
+}
+
+
+#sag11 {
+	width: 100%;
+	background-color: #038eff;
+	float: left;
+	margin-top: 5%;
+	display: block;
+}
+
+
+#mesaj {
+	width: 15%;
+	height: 15%;
+	background-color: white;
+	margin: auto;
+	float: right;
+	flex: 30%;
+	z-index: 2;
+	position: relative;
+	position: absolute;
+	left: 1040px;
+	display: none;
+	border-style: solid;
+	border-color: black;
+	position: fixed;
+	margin-top: 0%;
+}
+
+#mesajici {
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+	flex: 30%;
+	z-index: 3;
+	
+}
+
+
+
+.buton {
+	width: 13%;
+	height: 7%;
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: left;
+}
+
+
+.secili {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: left;
+}
+
+.buton:hover {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	float: left;
+	
+}
+
+
+
+.butonm {
+	width: 100%;
+	height: 500%;
+	background-color: #038eff;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.secilim {
+	width: 100%;
+	height: 15%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.butonm:hover {
+	width: 100%;
+	height: 500%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	
+}
+
+
+
+
+.post {
+	width: 95%;
+	height: 200%;
+	background-color: Transparent;
+	position: relative;
+	margin: auto;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
+	font-family: "Times New Roman", Times, serif;
+}
+
+.saggonderi {
+	width: 96%;
+	background-color: Transparent;
+	position: relative;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: #038eff;
+	
+}
+
+.icon {
+	float: right;
+	margin-right: 3%;
+	color: black;
+	border: none;
+	background-color: Transparent;
+	
+}
+
+.menuu {
+	width: 100%;
+	height: 3%;
+	background-color: #038eff;
+	color: white;
+	display: none;
+	position: relative;
+	position: fixed;
+	margin-top: -5%;
+	z-index: 2;
+}
+
+#gg {
+	float: right;
+	margin-right: 1%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: block;
+	margin-top: 1%;
+}
+
+
+
+#bildirim {
+	height: 7%;
+	float: right;
+	margin-right: 0.5%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: block;
+}
+
+#bildirimk {
+	height: 7%;
+	float: right;
+	margin-right: 0.5%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: none;
+}
+
+
+#ggm {
+	float: right;
+	background-color: Transparent;
+	display: block;
+	float: left;
+	color: white;
+	border: none;
+}
+
+
+
+#bildirimm {
+	float: right;
+	background-color: Transparent;
+	display: block;
+	float: left;
+	color: white;
+	border: none;
+	margin-right: 2%;
+	
+}
+
+#bildirimmk {
+	float: right;
+	background-color: Transparent;
+	display: none;
+	float: left;
+	color: white;
+	border: none;
+	margin-right: 2%;
+}
+
+
+
+
+
+.image {
+	width: 70%;
+	height: 25%;
+	background-color: gray;
+	position: relative;
+	margin: auto;
+}
+
+.gonderi {
+	width: 100%;
+	background-color: Transparent;
+	float: left;
+	flex: 70%;
+	margin-top: 2%;
+	border-bottom: 5px solid #038eff;
+	padding: 20px;
+	border-bottom-left-radius: 30px;
+}
+
+.aciklama {
+	width: 96%;
+	background-color: Transparent;
+	margin-left: 2%;
+	float: left;
+}
+
+.devaminioku {
+	margin-left: 1%;
+}
+
+.devaminioku:hover {
+	margin-left: 1%;
+}

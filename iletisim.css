@@ -1,0 +1,460 @@
+#ust {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #038eff;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: block;
+}
+
+
+::selection {
+  color: white;
+  background: gray;
+}
+
+
+
+#ustm {
+	width:100%;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #038eff;
+	top: 0;
+	z-index: 1;
+	color: White;
+	display: none;
+	position: fixed;
+}
+
+
+
+#gonderiler {
+	width: 68%;
+	background-color: Transparent;
+	float: left;
+	margin-left: 3%;
+	margin-top: 2%;
+	flex: 70%;
+	border-right-style: solid;
+	border-right-color: #ff0357;
+	border-width: 5px;
+}
+
+
+
+
+#sag {
+	width: 70%;
+	height: 93%;
+	background-color: Transparent;
+	float: right;
+	flex: 30%;
+}
+
+#ilacik {
+	background-color: Transparent;
+	float: right;
+	flex: 30%;
+	margin-left: 7%;
+	color: #038eff;
+}
+
+
+#mesaj {
+	width: 15%;
+	height: 15%;
+	background-color: white;
+	margin: auto;
+	float: right;
+	flex: 30%;
+	z-index: 2;
+	position: relative;
+	position: absolute;
+	left: 1040px;
+	display: none;
+	border-style: solid;
+	border-color: black;
+	position: fixed;
+}
+
+#mesajici {
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+	flex: 30%;
+	z-index: 3;
+	
+}
+
+
+
+#iletisim {
+	width: 30%;
+	height: 93%;
+	background-color: Transparent;
+	border-right: 5px solid #038eff;
+	padding: 20px;
+	border-top-right-radius: 30px;
+	float: left;
+}
+
+asd {
+	color: #038eff;
+	margin-left: 5%;
+}
+
+asdd {
+	color: #038eff;
+	margin-left: 10%;
+}
+
+asddd {
+	color: #038eff;
+	margin-left: 5%;
+}
+
+
+tur {
+	margin-left: 15%;
+}
+
+
+#mail {
+	font-size: 250%;
+	margin-top: 10%;
+}
+
+.mail {
+	margin-top: 5%;
+	float: left;
+}
+
+#mailcontainer {
+	width: 100%;
+	border: solid;
+	border-color: blue;
+}
+
+#igcontainer {
+	width: 100%;
+	border: solid;
+	border-color: blue;
+}
+
+#ig {
+	font-size: 250%;
+	margin-top: 11%;
+		color: #038eff;
+
+}
+
+.ig {
+	margin-top: 8%;
+	margin-right: 5%;
+	float: right;
+}
+
+
+textarea {
+	margin-left: 2%;
+    resize: none;
+	border: 2px solid #038eff;
+	padding: 10px;
+	border-radius: 25px;
+	transition-duration: 0.5s;
+}
+
+
+textarea:focus {
+	margin-left: 2%;
+    resize: none;
+	border: 2px solid #001aff;
+	padding: 10px;
+	border-radius: 25px;
+	outline: none;
+	transition-duration: 0.5s;
+}
+
+
+form {
+	margin-left: 2%;
+}
+
+input {
+	margin-left: 2%;
+	border: 2px solid #038eff;
+	padding: 10px;
+	border-radius: 25px;
+	outline: none;
+	transition-duration: 0.5s;
+}
+
+input:focus {
+	margin-left: 2%;
+	border: 2px solid #001aff;
+	padding: 10px;
+	border-radius: 25px;
+	outline: none;
+	transition-duration: 0.5s;
+}
+
+
+.buton {
+	width: 13%;
+	height: 7%;
+	background-color: transparent;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: left;
+}
+
+
+.gonder {
+	width: 65%;
+	height: 7%;
+	background-color: #038eff;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 1s;
+	float: left;
+	border: 0px solid #001aff;
+	padding: 0px;
+	border-radius: 0px;
+	margin-left: 15%;
+	margin-top: 10%;
+}
+
+.gonder:hover {
+	width: 65%;
+	height: 7%;
+	background-color: #038eff;
+	color: white;
+	text-decoration: none;
+	transition-duration: 1s;
+	border: 3px solid #001aff;
+	padding: 2px;
+	border-radius: 50px;
+}
+
+
+.secili {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	float: left;
+}
+
+.buton:hover {
+	width: 13%;
+	height: 7%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	float: left;
+	
+}
+
+
+
+.butonm {
+	width: 100%;
+	height: 500%;
+	background-color: #038eff;
+	color: white;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.secilim {
+	width: 100%;
+	height: 15%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+}
+
+.butonm:hover {
+	width: 100%;
+	height: 500%;
+	background-color: white;
+	color: black;
+	border: none;
+	text-decoration: none;
+	transition-duration: 0.5s;
+	position: relative;
+	margin: auto;
+	
+}
+
+
+
+
+.post {
+	width: 95%;
+	height: 200%;
+	background-color: Transparent;
+	position: relative;
+	margin: auto;
+	margin-bottom: 2.5%;
+	margin-top: 2.5%;
+	
+}
+
+.saggonderi {
+	width: 96%;
+	height: 10%;
+	background-color: blue;
+	position: relative;
+	margin: auto;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: black;
+	
+}
+
+.icon {
+	float: right;
+	margin-right: 3%;
+	color: black;
+	border: none;
+	background-color: Transparent;
+	
+}
+
+.menuu {
+	width: 100%;
+	height: 3%;
+	background-color: #038eff;
+	color: white;
+	display: none;
+	position: relative;
+	position: fixed;
+	margin-top: -5%;
+	z-index: 2;
+}
+
+#gg {
+	float: right;
+	margin-right: 1%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: block;
+	margin-top: 1%;
+}
+
+
+
+#bildirim {
+	height: 7%;
+	float: right;
+	margin-right: 0.5%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: block;
+}
+
+#bildirimk {
+	height: 7%;
+	float: right;
+	margin-right: 0.5%;
+	background-color: Transparent;
+	color: white;
+	border: none;
+	display: none;
+}
+
+
+#ggm {
+	float: right;
+	background-color: Transparent;
+	display: block;
+	float: left;
+	color: white;
+	border: none;
+}
+
+
+
+#bildirimm {
+	float: right;
+	background-color: Transparent;
+	display: block;
+	float: left;
+	color: white;
+	border: none;
+	margin-right: 2%;
+	
+}
+
+#bildirimmk {
+	float: right;
+	background-color: Transparent;
+	display: none;
+	float: left;
+	color: white;
+	border: none;
+	margin-right: 2%;
+}
+
+
+
+
+
+.image {
+	width: 70%;
+	height: 25%;
+	background-color: gray;
+	position: relative;
+	margin: auto;
+}
+
+.gonderi {
+	width: 100%;
+	background-color: Transparent;
+	float: left;
+	flex: 70%;
+	margin-top: 2%;
+	border-bottom-style: solid;
+	border-bottom-color: #ff0000;
+	border-width: 5px;
+}
+
+.aciklama {
+	width: 96%;
+	background-color: Transparent;
+	margin-left: 2%;
+	float: left;
+}
+
+.devaminioku {
+	margin-left: 1%;
+}
+
+.devaminioku:hover {
+	margin-left: 1%;
+}
